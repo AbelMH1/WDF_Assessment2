@@ -60,8 +60,9 @@
                 </fieldset>
                 <fieldset>
                     <legend>Competition Data</legend>
-                    <p>Your comments:<br>
-                        <textarea name="comments" cols="80" rows="6" placeholder="Comment anything you want about your favorite episode or anything you would like to share about the serie"></textarea>
+                    <p>
+                        <label for="Comments">Your comments:</label><br>
+                        <textarea name="comments" id="Comments" cols="80" rows="6" placeholder="Comment anything you want about your favorite episode or anything you would like to share about the serie"></textarea>
                     </p>
                     <p>Which is/are your favorite(s) character(s)?<br>
                         <label><input type="checkbox" name="favChar" value="Gumball">Gumball</label>
@@ -75,7 +76,7 @@
                         <label><input type="checkbox" name="favChar" value="GaylordRobinson">Gaylord Robinson</label>
                     </p>
                     <p>
-                        Upload your picture or drawing: <input type="file" name="image">
+                        <label for="File">Upload your picture or drawing: </label><input type="file" id="File" name="image">
                     </p>
                     <p>What are you competing into? <em>(required)</em>
                         <label><input type="radio" name="typeComp" value="cosplay" required>Cosplaying</label>
