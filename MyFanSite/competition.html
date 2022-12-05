@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+<head>
+	<meta charset="utf-8">
+	<title>The Amazing World of Gumball - Competition</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="images/Gumball_Icon.ico" rel="icon">
+</head>
+<body>
+    <div id="background">
+        <header>
+            <img src="images/TheAmazingWorldOfGumball_Logo.png" alt="Logo The Amazing World of Gumball" id="mainLogo">
+            <hr>
+            <nav>
+                <a id="a1" href="index.html">Homepage</a>
+                <a id="a2" href="resources.html">Resources</a>
+                <a id="a3" href="competition.html">Competition</a>
+                <a id="a4" href="contactus.html">Contact Us</a>
+                <a id="a5" href="faq.html"><abbr title="Frequently Asked Questions">FAQ</abbr></a>
+            </nav>
+            <h1>The Amazing World of Gumball</h1>
+        </header>
+        <main>
+            <h2>Competition</h2>
+            <p>
+                Enter on our monthly drawing or cosplaying competition! Each month there is a 
+                competition for fans to enter. In order to participate you just need to submit your 
+                drawing or picture indicating if you are entering the drawing or the cosplaying competition 
+                respectively and the information below.
+            </p>
+            <form method="post" action="https://webdevcit.com/displayvalues.php" target="_blank">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <p>
+                        <label for="Name">Name <em>(required)</em>: </label><input type="text" name="name" id="Name" required autocomplete="on">
+                    </p>
+                    <p>
+                        <label for="Email">Email address <em>(required)</em>:  </label><input type="email" name="email" id="Email" required autocomplete="on">
+                        <label for="Number">Contact Number <em>(required)</em>: </label><input type="number" name="number" id="Number" required autocomplete="on">
+                    </p>
+                    <p>
+                        <label for="ContactMethod">Preferred method of contact: </label>
+                        <select name="contactMethod" id="ContactMethod">
+                            <option value="email">Email</option>
+                            <option value="zoom">Zoom</option>
+                            <option value="whatsApp">WhatsApp</option>
+                            <option value="textMessage">Text message</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="DateBirth">Date of birth: </label><input type="date" name="dateBirth" id="DateBirth">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Would you like to be updated with news about the site?</legend>
+                    <p>
+                        <label><input type="radio" name="suscribe" value="yes">Yes please</label>
+                        <label><input type="radio" name="suscribe" value="no" checked>No thanks</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Competition Data</legend>
+                    <p>Your comments:<br>
+                        <textarea name="comments" cols="80" rows="6" placeholder="Comment anything you want about your favorite episode or anything you would like to share about the serie"></textarea>
+                    </p>
+                    <p>Which is/are your favorite(s) character(s)?<br>
+                        <label><input type="checkbox" name="favChar" value="Gumball">Gumball</label>
+                        <label><input type="checkbox" name="favChar" value="Darwin">Darwin</label>
+                        <label><input type="checkbox" name="favChar" value="Annaise">Annaise</label>
+                        <label><input type="checkbox" name="favChar" value="Nicole">Nicole</label>
+                        <label><input type="checkbox" name="favChar" value="Richard">Richard</label>
+                        <label><input type="checkbox" name="favChar" value="PennyFitzgerald">Penny Fitzgerald</label>
+                        <label><input type="checkbox" name="favChar" value="BananaJoe">Banana Joe</label>
+                        <label><input type="checkbox" name="favChar" value="LucySimian">Lucy Simian</label>
+                        <label><input type="checkbox" name="favChar" value="GaylordRobinson">Gaylord Robinson</label>
+                    </p>
+                    <p>
+                        Upload your picture or drawing: <input type="file" name="image">
+                    </p>
+                    <p>What are you competing into? <em>(required)</em>
+                        <label><input type="radio" name="typeComp" value="cosplay" required>Cosplaying</label>
+                        <label><input type="radio" name="typeComp" value="drawing">Drawing</label>
+                    </p>
+                </fieldset>
+                <p>
+                    <button type="submit">
+                        <img src="images/happyFace.png" height="48" alt="Tick Icon"><br>  <!-- Image from: https://www.pngplay.com/es/image/237646 -->
+                        Click to send
+                    </button>
+                    <button type="reset">
+                        <img src="images/normalFace.png" height="48" alt="Cancel Icon"><br>  <!-- Image from: https://stickers.cloud/es/pack/gumball-2 EDITED by Abel Menendez -->
+                        Click to reset
+                    </button>
+                </p>
+            </form>
+        </main>
+    </div>
+    <hr>
+    <footer class="flex-container">
+        <div id="author">
+            <p>
+                Copyright &copy; 2022 Abel Menendez Hernandez<br>
+                Asturias, Spain
+            </p>
+        </div>
+        <div id="logo"><img src="images/myLogo.png" alt="Logo" height="150"></div>
+        <div id="contact">
+            <address>
+                Contact details:<br>
+                abel.menendezhernandez@mycit.ie
+            </address>
+        </div>
+        <div id="validTags">
+            <p>
+                <a href="https://validator.w3.org/#validate_by_upload" target="_blank">
+                    <img src="images/html5_validator_orange.png" alt="¡HTML5 Válido!">
+                </a><br>
+                <a href="https://jigsaw.w3.org/css-validator/#validate_by_upload" target="_blank">
+                    <img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS Válido!">
+                </a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
