@@ -1,0 +1,337 @@
+/* -------------------- For ALL the webpages -------------------- */
+@import url('https://fonts.cdnfonts.com/css/gumball');
+@font-face {
+    font-family: myFont;
+    src: url('font/Gumball.ttf');
+}
+html {
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 10px #1a1a1a;
+    border-radius: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background: radial-gradient(rgba(124, 124, 124, 0.5), rgba(36, 36, 36, 0.5));
+    border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: radial-gradient(rgba(124, 124, 124, 0.7), rgba(36, 36, 36, 0.7));
+}
+body {
+    width: 80%;
+    margin: auto;
+    background-image: url(images/background.jpg);  /* Image from: https://gumball.fandom.com/es/wiki/Primera_Temporada */
+    background-color: darksalmon;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 1.2em;
+}
+#background { /* A white panel so the content can be seen better */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    margin-top: 1em;
+    padding: 2% 5%;
+}
+h1, h2, h3 {
+    font-family: 'myFont', sans-serif;
+}
+h2 {
+    text-decoration: underline;
+}
+.iconList {
+    list-style-image: url(images/listImg.png);  /* Image from: https://www.pngplay.com/es/image/237646 EDITED by Abel Menendez */
+}
+.iconList ul {
+    list-style-image: none;
+}
+.iconList li {
+    margin-bottom: 5px;
+}
+.iconList li a {
+    transition: .5s ease;
+}
+.iconList li a:hover {
+    margin-left: .6em;
+    transition: .5s ease;
+}
+.iconList a:any-link {
+    text-decoration: none;
+    color: rgb(3, 30, 95);
+}
+a {
+    text-decoration: none;
+}
+.flex-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.flex-container > div {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 0.5%;
+    margin: 1% 0 0 0;
+}
+a:any-link {
+    color: rgb(3, 30, 95);
+}
+/* -------------------- HEADER -------------------- */
+header {
+    text-align: center;
+}
+#mainLogo {
+    width: 40%;
+    margin-bottom: 1em;
+}
+#index #mainLogo {
+    animation: drop 1.5s ease;
+}
+@keyframes drop {
+    0% {
+        transform: translateY(-250px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+header nav a {
+    display: inline-block;
+    width: 18%;
+    padding: 0.5% 0;
+    background-color: aquamarine;
+    border-radius: 0 0 20px 20px;
+    text-decoration: none;
+    margin-top: 0;
+    vertical-align: top;
+    transition: ease 0.2s;
+    
+}
+header nav a:hover {
+    transform: scaleY(1.15) translateY(2px);
+    transition: ease 0.2s;
+}
+header hr {
+    margin: 0;
+    border: 5px solid lightpink;
+}
+@keyframes droplist {
+    from {
+        transform: translateY(-15px) scaleY(0) ;
+        opacity: 0;
+    }
+}
+#a1 {
+    animation: droplist 1s both;
+}
+#a2 {
+    animation: droplist 1s both .2s;
+}
+#a3 {
+    animation: droplist 1s both .4s;
+}
+#a4 {
+    animation: droplist 1s both .6s;
+}
+#a5 {
+    animation: droplist 1s both .8s;
+}
+/* -------------------- FOOTER -------------------- */
+footer {
+    background-color: rgba(221, 146, 76, 0.945);
+    box-sizing: border-box;
+    border-radius: 30px;
+    align-items: center;
+    padding: 0.8em;
+    margin-bottom: 2em;
+}
+footer > div {
+    width: 30%;
+    min-width: 255px;
+    text-align: center;
+}
+#references p {
+    text-align: left;
+    margin-bottom: 0.3em;
+}
+footer nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    text-align: left;
+}
+footer nav a:any-link {
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+    transition: ease 0.5s;
+}
+footer nav a:hover {
+    color: white;
+    transition: ease 0.5s;
+}
+#validTags {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    width: 5%;
+}
+#validTags p {
+    margin: 0;
+    text-align: right;
+}
+#validTags img {
+    width: 88px;
+    height: 31px;
+}
+/* -------------------- index.html -------------------- */
+#index { /* Body just for the Index.html */
+    background-image: url(images/verticalBackground.jpg);  /* Image from: https://www.filmaffinity.com/cl/film253987.html */
+    background-color: darkturquoise;
+    background-attachment: scroll;
+}
+#index #a1 {
+    animation: droplist 1s both 1s;
+}
+#index #a2 {
+    animation: droplist 1s both 1.3s;
+}
+#index #a3 {
+    animation: droplist 1s both 1.6s;
+}
+#index #a4 {
+    animation: droplist 1s both 1.9s;
+}
+#index #a5 {
+    animation: droplist 1s both 2.2s;
+}
+#characters .flex-container {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+#iframe_Characters {
+    width: 65%;
+    height: 19em;
+    border: hidden;
+}
+#introVideo {
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 400px;
+}
+@media only screen and (max-width: 900px) {
+    #introVideo {
+        height: 250px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    #introVideo {
+        height: 200px;
+    }
+}
+#funnyVideos iframe {
+    width: 380px;
+    height: 215px;
+    margin-bottom: 1%;
+}
+@media only screen and (max-width: 1190px) {
+    #funnyVideos .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #funnyVideos iframe {
+        width: 80%;
+        height: 30vw;
+    }
+}
+#index footer{ /* Footer just for the Index.html */
+    background-color: rgba(33, 185, 231, 0.822);
+}
+/* -------------------- resources.html -------------------- */
+table {
+    width: 100%;
+    border: 1px black solid;
+}
+thead {
+    background-color: #6ee3dad8;
+    position: sticky;
+    top: .5em;
+}
+table td:first-child {
+    font-weight: bold;
+}
+table tr:nth-child(even) {
+    background-color: #90909083;
+}
+td img {
+    height: 10vw;
+    width: auto;
+}
+th {
+    font-weight: bolder;
+    font-size: 2vw;
+}
+td, th {
+    text-align: center;
+    padding: .5em 1em;
+    font-size: 1.5vw;
+    border: 1px solid black;
+}
+/* -------------------- competition.html -------------------- */
+fieldset {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+textarea {
+    width: 90%;
+}
+input:focus, select:focus, textarea:focus, input:hover, select:hover, textarea:hover {
+    background-color: rgba(230, 230, 230, 0.9);
+}
+/* -------------------- contactus.html -------------------- */
+.flex-container hr {
+    border: 1px dotted black;
+    margin: 0 0.2em 0.5em;
+}
+.flex-container h3 {
+    margin: 0.5em 0 0.2em 0;
+}
+#ContactMore {
+    width: 40%;
+    min-width: 295px;
+}
+#ContactHow {
+    width: 25%;
+    min-width: 195px;
+}
+#ContactWhere {
+    width: 35%;
+    min-width: 295px;
+}
+#iframe_map {
+    width: 100%;
+}
+@media only screen and (max-width: 1190px) {
+    main .flex-container {
+        flex-direction: column;
+    }
+    .flex-container > div {
+        text-align: center;
+        box-sizing: border-box;
+        margin: auto;
+    }
+    #ContactHow, #ContactMore, #ContactWhere {
+        width: 80%;
+    }
+}
+/* -------------------- faq.html -------------------- */
+
